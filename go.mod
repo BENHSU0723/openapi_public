@@ -1,9 +1,10 @@
-module github.com/free5gc/openapi
+module github.com/BENHSU0723/openapi_public
 
 go 1.21
 
 require (
 	github.com/antihax/optional v1.0.0
+	github.com/free5gc/openapi v1.0.8
 	github.com/golang-jwt/jwt v3.2.1+incompatible
 	github.com/mitchellh/mapstructure v1.4.2
 	github.com/pkg/errors v0.9.1

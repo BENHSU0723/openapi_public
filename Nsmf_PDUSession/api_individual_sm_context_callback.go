@@ -16,8 +16,8 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/BENHSU0723/openapi_public/models"
 	"github.com/free5gc/openapi"
-	"github.com/free5gc/openapi/models"
 )
 
 type IndividualSMContextNotificationApiService service

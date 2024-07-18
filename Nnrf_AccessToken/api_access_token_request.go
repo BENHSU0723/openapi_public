@@ -17,9 +17,9 @@ import (
 	"strings"
 
 	"github.com/antihax/optional"
-
 	"github.com/free5gc/openapi"
-	"github.com/free5gc/openapi/models"
+
+	"github.com/BENHSU0723/openapi_public/models"
 )
 
 // Linger please

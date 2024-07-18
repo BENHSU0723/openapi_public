@@ -6,11 +6,11 @@ import (
 	"time"
 
 	"github.com/antihax/optional"
+	"github.com/free5gc/openapi"
 	"golang.org/x/oauth2"
 
-	"github.com/free5gc/openapi"
-	"github.com/free5gc/openapi/Nnrf_AccessToken"
-	"github.com/free5gc/openapi/models"
+	"github.com/BENHSU0723/openapi_public/Nnrf_AccessToken"
+	"github.com/BENHSU0723/openapi_public/models"
 )
 
 var tokenMap sync.Map

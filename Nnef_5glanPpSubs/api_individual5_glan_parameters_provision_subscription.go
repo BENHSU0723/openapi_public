@@ -17,7 +17,7 @@ import (
 	"net/http"
 	"net/url"
 	"strings"
-	"bitbucket.org/free5gc-team/openapi/models"
+	"github.com/BENHSU0723/openapi_public/models"
 )
 
 

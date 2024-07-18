@@ -11,7 +11,7 @@ package Nudr_DataRepository
 
 import (
 
-	// "github.com/free5gc/openapi/models"
+	// "github.com/BENHSU0723/openapi_public/models"
 	"context"
 	"fmt"
 	"io/ioutil"
