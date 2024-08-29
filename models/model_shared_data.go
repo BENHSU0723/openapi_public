@@ -17,4 +17,10 @@ type SharedData struct {
 	SharedDnnConfigurations map[string]DnnConfiguration        `json:"sharedDnnConfigurations,omitempty" yaml:"sharedDnnConfigurations" bson:"sharedDnnConfigurations" mapstructure:"SharedDnnConfigurations"`
 	SharedTraceData         *TraceData                         `json:"sharedTraceData,omitempty" yaml:"sharedTraceData" bson:"sharedTraceData" mapstructure:"SharedTraceData"`
 	SharedSnssaiInfos       map[string]SnssaiInfo              `json:"sharedSnssaiInfos,omitempty" yaml:"sharedSnssaiInfos" bson:"sharedSnssaiInfos" mapstructure:"SharedSnssaiInfos"`
+	// A map(list of key-value pairs) where GroupId serves as key of VnGroupData
+	SharedVnGroupDatas map[string]VnGroupData `json:"sharedVnGroupDatas,omitempty"`
+	// A map(list of key-value pairs) where JSON pointer pointing to an attribute within the SharedData serves as key of SharedDataTreatmentInstruction
+	TreatmentInstructions   map[string]SharedDataTreatmentInstruction `json:"treatmentInstructions,omitempty"`
+	SharedSmSubsData        SessionManagementSubscriptionData         `json:"sharedSmSubsData,omitempty"`
+	SharedEcsAddrConfigInfo *EcsAddrConfigInfo                        `json:"sharedEcsAddrConfigInfo,omitempty"`
 }
