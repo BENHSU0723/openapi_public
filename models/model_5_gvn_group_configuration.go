@@ -26,4 +26,7 @@ type Model5GvnGroupConfiguration struct {
 
 	//Self-Define ,means logically all group members will assigned in a subset
 	SubnetIP IpAddress `json:"subnetIP,omitempty"`
+
+	//Self-Define, there could be many multicast groups under a single 5G VN group(5glan group)
+	MulticastGroupList []MulticastGroup `json:"multicastGroupList,omitempty"`
 }

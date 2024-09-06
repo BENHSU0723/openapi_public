@@ -17,4 +17,7 @@ type Model5GLanParametersPatch struct {
 
 	// Describes the operation systems and the corresponding applications for each operation systems. The key of map is osId.
 	AppDesps map[string]AppDescriptorRm `json:"appDesps,omitempty"`
+
+	// Self-defined IE, for multicast groups used and all belongs to a single 5GLAN VN group
+	MulticastGroupList []MulticastGroup `json:"multicastGroupList,omitempty"`
 }
