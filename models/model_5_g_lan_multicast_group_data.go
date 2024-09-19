@@ -1,10 +1,11 @@
 package models
 
 type MulticastGroup struct {
-	// it's unique among all MulticastGroups under a single 5G VN Group
+	// it's an unique ID among all Multicast Groups under a single 5G VN Group
 	MultiGroupId        string           `json:"multiGroupId"`
 	SourcePduSessIpAddr IpAddress        `json:"sourcePduSessIpAddr"`
 	GroupIpAddr         IpAddress        `json:"groupIpAddr"`
+	MembersAddr         []IpAddress      `json:"membersAddr"`
 	GroupServiceType    GroupServiceType `json:"groupServiceType"`
 	QueryType           QueryType        `json:"queryType,omitempty"`
 }
