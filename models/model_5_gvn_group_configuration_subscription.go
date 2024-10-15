@@ -17,6 +17,10 @@ type Vn5gGroupConfigSubscription struct {
 
 	SingleNssai Snssai `json:"singleNssai,omitempty"`
 
+	// - record the current vn group members who have build up Group Used PDU session, not all members
+	// - it's used for 5glan multicast to find SM context
+	CurrMembers map[string]string // supi as key, the ref string of group used SM context as value
+
 	// String providing an URI formatted according to RFC 3986.
 	CallbackReference string `json:"callbackReference"`
 
