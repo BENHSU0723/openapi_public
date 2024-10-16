@@ -19,7 +19,8 @@ type Vn5gGroupConfigSubscription struct {
 
 	// - record the current vn group members who have build up Group Used PDU session, not all members
 	// - it's used for 5glan multicast to find SM context
-	CurrMembers map[string]string // supi as key, the ref string of group used SM context as value
+	// supi as key, the ref string of group used SM context as value
+	CurrMembers map[string]string `json:"currMembers"`
 
 	// String providing an URI formatted according to RFC 3986.
 	CallbackReference string `json:"callbackReference"`
