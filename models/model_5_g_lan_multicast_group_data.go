@@ -2,12 +2,13 @@ package models
 
 type MulticastGroup struct {
 	// It'a group ID that the multicast-group belongs to, a 5GVN group can contains many multicast-groups
-	ExternalGroupId string `json"externalGroupId"`
+	ExternalGroupId string `json:"externalGroupId"`
 	// it's an unique ID among all Multicast Groups under a single 5G VN Group
 	MultiGroupId        string           `json:"multiGroupId"`
 	SourcePduSessIpAddr IpAddress        `json:"sourcePduSessIpAddr"`
+	SourceUeGpsi        string           `json:"sourceUeGpsi"`
 	GroupIpAddr         IpAddress        `json:"groupIpAddr"`
-	MembersAddr         []IpAddress      `json:"membersAddr"`
+	MembersGpsi         []string         `json:"membersGpsi"`
 	GroupServiceType    GroupServiceType `json:"groupServiceType"`
 	QueryType           QueryType        `json:"queryType,omitempty"`
 }
